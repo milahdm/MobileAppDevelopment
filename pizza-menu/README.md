@@ -1,13 +1,17 @@
-John Entezari:
-Did spinner functionality, and the app theme in res/values
+# Pizza Menu
 
-Milahd Mansoori:
-Did the toppings check boxes, dialogue window, and launcher icon.
+## Description
+The Pizza Menu App allows users to customize their pizza orders interactively. With features like sauce selection, topping customization, and a dynamic cost calculator, it provides a seamless and enjoyable user experience.
 
-<img src="MainPageScreenShot.png" alt="Main Page Screenshot" width="300" height="500">
+## Key Features
+Sauce Selection: Choose from a variety of sauces with individual pricing.
+Topping Customization: Add multiple toppings and enjoy special offers for selecting five toppings.
+Dynamic Cost Calculation: Real-time updates to the total cost as selections are made.
+Dark Mode: Toggle between light and dark themes for optimal viewing in different environments.
+Interactive Feedback: Alerts for special offers and toast messages for user actions.
 
-
-The cool UI changes that were made were implemented using a switch declared in the 
-main activity xml and when toggled on by the user the MainActivity kt file uses the colors
-declared in the colors xml to change the appearance of the main activity with contrasting colors
-for a cool dark mode-like appearance. Even the colors of the spinner is changed in dark mode.
+## Technical Highlights
+Built using Kotlin with Android Studio.
+Real-time UI updates using Spinners, CheckBoxes, and Toasts.
+Light and dark mode integration with adaptive color theming.
+Dynamic dialog alerts for enhanced interactivity.
