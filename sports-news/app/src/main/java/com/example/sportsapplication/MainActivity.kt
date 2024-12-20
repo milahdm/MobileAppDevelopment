@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var cronetEngine: CronetEngine
     private lateinit var handler: Handler
     private lateinit var runnable: Runnable
+    private val apiKey = "YOUR_API_KEY_HERE"
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -66,7 +68,7 @@ class MainActivity : AppCompatActivity() {
     private fun fetchNews() {
         try {
             val requestBuilder = cronetEngine.newUrlRequestBuilder(
-                "https://newsapi.org/v2/everything?q=NBA&apiKey=488f9c7eb19441e9bb0e250a53dff0b8",
+                "https://newsapi.org/v2/everything?q=NBA&apiKey=$apiKey",
                 MyUrlRequestCallback { responseJson ->
                     if (responseJson != null) {
                         try {
